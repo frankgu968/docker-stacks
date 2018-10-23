@@ -1,11 +1,10 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
+# Modified by Frank Gu
 
-# Ubuntu 18.04 (bionic) from 2018-05-26
-# https://github.com/docker-library/official-images/commit/aac6a45b9eb2bffb8102353c350d341a410fb169
-FROM ubuntu:bionic-20180526@sha256:c8c275751219dadad8fa56b3ac41ca6cb22219ff117ca98fe82b42f24e1ba64e
-
-LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
+# Ubuntu 16.04 LTS + CUDA 9.2 + CuDNN7
+FROM nvidia/cuda:9.2-cudnn7-devel
+LABEL maintainer="Frank Gu <frank@phenomic.ai>"
 
 USER root
 
